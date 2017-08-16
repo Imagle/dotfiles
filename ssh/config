@@ -1,0 +1,112 @@
+Host * 
+#    UseRoaming no
+    ServerAliveInterval 60
+
+# Desktop
+Host krayt
+    HostName krayt.ome.ksu.edu
+    Port 11122
+
+# Treadmill iMac
+Host fugazi
+    HostName fugazi.ome.ksu.edu
+    Port 11122
+
+# Sandbox
+Host mhn
+    HostName ome-wse-mhn.campus.ksu.edu
+
+# Ubuntu desktop
+Host fermata
+    HostName 68.102.23.189
+    Port 11122
+    user mark
+
+Host 192.168.1.20
+    user mark
+
+# Access GitHub even when port 22 isn't available
+Host github.com
+    HostName ssh.github.com
+    Port 443
+
+# OME system admin
+Host ome-tools1*
+    HostkeyAlgorithms ssh-dss
+
+Host tx1
+    HostName ome-txhub1.cc.ksu.edu
+
+Host tx2
+    HostName ome-txhub2.cc.ksu.edu
+
+Host dev
+    HostName ome-dev-as1.ome.campus
+
+Host tools
+    HostName ome-tools1.campus.ksu.edu
+
+Host tools1
+    HostName ome-vm-tools1.campus.ksu.edu
+
+Host txdev1
+    HostName ome-dev-txhub1.cc.ksu.edu
+
+Host txdev2
+    HostName ome-dev-txhub2.cc.ksu.edu
+
+Host web1
+    HostName ome-web1.campus.ksu.edu
+
+Host web2
+    HostName ome-web2.campus.ksu.edu
+
+Host web3
+    HostName ome-web3.campus.ksu.edu
+
+Host web4
+    HostName ome-web4.campus.ksu.edu
+
+Host trebor
+    HostName trebor.ome.ksu.edu
+
+Host mon1
+    HostName ome-mon1.campus.ksu.edu
+
+# WebTeam Fabric
+#Host ec2*compute-1.amazonaws.com
+#    StrictHostKeyChecking no
+#    User fabric
+#    IdentityFile  /Users/mhn/.ssh/id_fabric
+Host ec2*compute-1.amazonaws.com
+    StrictHostKeyChecking no
+    User ubuntu
+    IdentityFile /Users/mhn/.ssh/asakey.pem
+
+#Host aws_prod1
+#    HostName ec2-23-21-38-28.compute-1.amazonaws.com
+#    StrictHostKeyChecking no
+#    User mhn
+#    IdentityFile /Users/mhn/.ssh/mhn.pem
+
+#Host web_prod1
+#    HostName ec2-23-21-38-28.compute-1.amazonaws.com
+#    User ubuntu
+#    IdentityFile ~/.ssh/asakey.pem
+
+#Host web_prod2
+#    HostName ec2-50-16-61-249.compute-1.amazonaws.com
+#    User ubuntu
+#    IdentityFile ~/.ssh/asakey.pem
+
+# Personal K-State Webpage
+Host ksuunix
+    HostName unix.ksu.edu
+
+# WebFaction hosting
+Host wf
+    HostName markn.webfactional.com
+    User markn
+
+Host *
+    User mhn

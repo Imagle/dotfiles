@@ -1,0 +1,22 @@
+#tmux ignores
+*.log
+
+# VIM ignores
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Ignore vim/bundles, vim/tmp, and vim/autoload
+vim/bundle
+vim/tmp
+vim/autoload
+
+# Ignore Neovim plugins & tmp files
+nvim/autoload
+nvim/plugged
+nvim/tmp
+
+# Ignore bash_history
+bash/bash_history
