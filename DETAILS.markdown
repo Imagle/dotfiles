@@ -60,7 +60,7 @@ To install vim-plug managed plugins run the following command from within Vim:
 
 To install vim-plug run the following command:
 
-    curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## Neovim (nvim)
