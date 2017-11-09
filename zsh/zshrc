@@ -11,3 +11,9 @@ source ~/.zsh/bindkeys.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
 source ~/.zsh/zsh_hooks.zsh
+
+source ~/.zsh/zshenv
+export PATH="/usr/local/opt/bison/bin:$PATH"
+export PATH="/usr/local/opt/qt/bin:$PATH"
+alias g++=’g++ -std=c++11’
+export PATH="/Users/wangruiqiang/anaconda/bin:$PATH"

@@ -99,7 +99,7 @@ alias ect="git status --short | awk '{print $2}' | xargs -o nvim"
 # }}}
 # Neovim and Vim {{{
 # alias 'vi=vim'
-alias 'vi=nvim'
+alias 'vi=vim'
 alias 'nv=nvim'
 alias vplug="vim +PlugUpgrade +PlugUpdate +qall"
 alias nplug="nvim +PlugUpgrade +PlugUpdate +qall"

@@ -253,3 +253,5 @@ alias nomz='ps aux | less'
 alias nomnom='killall'
 alias cya='reboot'
 alias kthxbai='halt'
+
+alias ssh-mysql="ssh -fNg -L 33061:10.19.62.242:3306 wangruiqiang@106.75.17.93 -p 2003"

@@ -43,7 +43,7 @@ dotfiles_dir=~/.dotfiles
 # Update dotfiles to master branch
 echo "Updating $dotfiles_dir to master"
 cd $dotfiles_dir;
-git pull origin master;
+#git pull origin master;
 cd;
 
 echo ""
@@ -51,7 +51,8 @@ echo ""
 # Build key,value pairs of the tool and whether or not to install it
 # each tuple lists a directory and its install flag
 # tuples="bash,Y gem,Y git,Y openconnect,Y tmux,Y slate,Y hg,N textmate,N"
-tuples="zsh,Y gem,Y git,Y openconnect,Y tmux,Y slate,Y hg,N textmate,N"
+# tuples="zsh,Y gem,Y git,Y openconnect,Y tmux,Y slate,Y hg,N textmate,N"
+tuples="tmux,N"
 
 # For these directories, create symlinks for each file present
 # By passing the ask function `Y` we default to creating these

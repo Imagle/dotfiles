@@ -28,4 +28,21 @@ if which rvm-prompt &> /dev/null; then
     export PATH=$HOME/.rvm/bin:$PATH
 fi
 
+export GOPATH=/usr/local/Cellar/go/1.8.3
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+
+export SPARK_PATH=~/Tools/spark-1.6.0-bin-hadoop2.6
+
+export PATH=$SPARK_PATH/bin:$PATH
+
+export PYSPARK_DRIVER_PYTHON="jupyter"
+
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+
+alias snotebook='$SPARK_PATH/bin/pyspark --masterlocal[2]'
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/
+export PATH=$JAVA_HOME/bin:$PATH
 
